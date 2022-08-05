@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Calculator */
+.calculator{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: black;
+}
+
+.display-container{
+    background-color: rgb(131, 127, 127);
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.computation-display{
+    color: rgb(41, 220, 41);
+    font-size: 22px;
+    height: 29px;
+}
+
+.user-display{
+    color: white;
+    font-size: 28px;
+    height: 29px;
+}
+
+
+.calculator-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+button{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid black;
+    font-size: 24px;
+}
+
+.active{
+    background-color: rgb(97, 97, 97);
+}
+
+button:hover{
+    background-color: gray;
+}
+
+.clear-button{
+    grid-column: span 2;
+    background-color: red;
+}
+
+.equal-button {
+    background-color: rgb(45, 45, 218);
+}
+
+footer{
+    text-align: center;
+    font-size: 20px;
+}
